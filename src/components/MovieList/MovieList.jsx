@@ -11,13 +11,17 @@ function MovieList() {
         dispatch({ type: 'FETCH_MOVIES' });
     }, []);
 
+    const showMeDetails = () => {
+        console.log('Inside show me details');
+    }
+
     return (
         <main>
             <h1>MovieList</h1>
             <section className="movies">
                 {movies.map(movie => {
                     return (
-                        <div key={movie.id} >
+                        <div key={movie.id} onClick={showMeDetails} >
                             <h3>{movie.title}</h3>
                             <img src={movie.poster} alt={movie.title}/>
                         </div>
