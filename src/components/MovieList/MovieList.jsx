@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom'
 import './MovieList.css'
 
 function MovieList() {
-
+    const history = useHistory()
     const dispatch = useDispatch();
     const movies = useSelector(store => store.movies);
 
@@ -11,8 +12,10 @@ function MovieList() {
         dispatch({ type: 'FETCH_MOVIES' });
     }, []);
 
+    //This function will show the details of the movie in new page
     const showMeDetails = () => {
         console.log('Inside show me details');
+        history.push('/details')
     }
 
     return (

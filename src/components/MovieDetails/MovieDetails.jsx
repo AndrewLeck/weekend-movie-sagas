@@ -1,7 +1,7 @@
 function MovieDetails() {
     return(
         <>
-            <h1> Movie Details Page</h1>        
+            <h1>Details</h1>        
         </>
     )
 }
