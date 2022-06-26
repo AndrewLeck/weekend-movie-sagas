@@ -1,13 +1,15 @@
 import { useHistory } from 'react-router-dom';
 
 function MovieDetails() {
-    const history = useHistory()
+
+const history = useHistory()
     
-    function sendBackToHomePage(){
-        console.log('inside send back to home page')
-        history.push('/');
-    }
-    
+// This function will send you back to the home page
+function sendBackToHomePage(){
+    //  console.log('inside send back to home page')
+     history.push('/');
+ }
+
     return(
         <>
             <h1>Details</h1>
