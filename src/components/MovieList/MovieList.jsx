@@ -32,12 +32,12 @@ function showMeDetails(){
         <main>
             <h1>MovieList</h1>
             <section className="movies" >
-                {movies.map(movie => {
+                {movies.map((movie, i) => {
                     return (
-                        <div key={movie.id}  onClick={showMeDetails}>
+                        <div key={movie.id} >
                             <h3>{movie.title}</h3>
-                            <Link key={movie.id} to={`/details/${movie.id}`}>
-                            <img src={movie.poster} alt={movie.title} />
+                            <Link key={movie.id} to={`/details/${i}`}>
+                            <img src={movie.poster} alt={movie.title} onClick={showMeDetails} />
                             </Link>
                         </div>
                     );

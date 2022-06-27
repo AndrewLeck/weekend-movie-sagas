@@ -2,4 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url('https://t4.ftcdn.net/jpg/00/92/82/47/360_F_92824780_60mM0MW8H3bdTfyPHaaavjyXtqDa1Asx.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
